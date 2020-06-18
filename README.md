@@ -1,2 +1,6 @@
 # CodeSnipets
-Some code snipets  by me on several languages
+Here are some programming code snipets on several languages i usual code.
+
+Code presented here is from past code iterantions and not from current development cycles.
+
+
