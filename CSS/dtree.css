@@ -1,0 +1,15 @@
+.dtree { font-family: "SanFrancisco"; font-size: 11px; color: #666; white-space: nowrap; width: 180px; height: 500px; overflow: auto; overflow-x: scroll; overflow-y: scroll; text-shadow: none; }
+
+.dtree img { border: 0px; vertical-align: middle; }
+
+.dtree a { color: #333; text-decoration: none; }
+
+.dtree a.node, .dtree a.nodeSel { white-space: nowrap; padding: 1px 2px 1px 2px; }
+
+.dtree a.node:hover, .dtree a.nodeSel:hover { color: #333; text-decoration: underline; }
+
+.dtree a.nodeSel { background-color: none; }
+
+.dtree .clip { overflow: hidden; }
+
+/*# sourceMappingURL=dtree.css.map */

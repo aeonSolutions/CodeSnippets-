@@ -1,0 +1,76 @@
+body {
+  font-size: 100%;
+  line-height: 1.125em; }
+
+.bodytext p {
+  font-size: 0.875em; }
+
+.sidenote {
+  font-size: 0.75em; }
+
+.kernLess {
+  letter-spacing: -0.1em; }
+
+.kernMore {
+  letter-spacing: 1.2em; }
+
+.TextS0 {
+  font-size: 0.6em;
+  text-shadow: none; }
+
+.TextS1 {
+  font-size: 0.75em; }
+
+.TextS2 {
+  font-size: 0.875em; }
+
+.TextS3 {
+  font-size: 1em; }
+
+.TextS4 {
+  font-size: 1.125em; }
+
+.TextS5 {
+  font-size: 1.25em; }
+
+.TextS6 {
+  font-size: 1.5em; }
+
+.TextS7 {
+  font-size: 1.75em; }
+
+.TextS8 {
+  font-size: 2em; }
+
+.Bold {
+  font-weight: bold; }
+
+.Klee {
+  font-family: "Klee"; }
+
+.ArialRegular {
+  font-family: "ArialRegular"; }
+
+.SanFrancisco {
+  font-family: "SanFrancisco"; }
+
+.OpenSans {
+  font-family: "OpenSans"; }
+
+.ArialBlack {
+  font-family: "ArialBlack"; }
+
+.NoShadow {
+  text-shadow: none; }
+
+.LinkPointer {
+  text-decoration: none;
+  cursor: pointer; }
+  .LinkPointer:active {
+    text-decoration: none;
+    cursor: pointer; }
+
+.inline-p {
+  display: inline-table; }
+
+/*# sourceMappingURL=TextElements.css.map */

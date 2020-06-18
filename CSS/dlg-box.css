@@ -1,0 +1,122 @@
+#voids-shell { margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; display: block; width: 99.6%; }
+
+.dlg-box { padding: 0px 0px 0px 0px; -moz-box-shadow: 3px 3px 5px 5px #C5C5C5; -webkit-box-shadow: 3px 3px 5px 5px #C5C5C5; box-shadow: 3px 3px 5px 5px #C5C5C5; }
+
+.dlg-center-screen { position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+#Dlg-LoadFile { width: 700px; height: 400px; background-color: #EFEFEF; border: 1px solid #AAAAAA; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; z-index: 5; }
+
+.Dlg-LoadFile-tab { padding: 10px 5px 0px 5px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; height: 100%; max-height: 358px; display: none; color: #444; text-shadow: 1px 1px #fff; text-align: left; overflow: hidden; width: 100%; max-width: 690px; background: #c9c9c9; }
+
+#Dlg-LoadFile input[type="radio"] { display: none; }
+
+.DlgLF-header-label { border-top-left-radius: 10px; border-top-right-radius: 10px; display: inline-block; width: 30%; max-width: 150px; padding: 5px 0px 4px 10px; margin: 0px 0px 5px 0px; font-size: 14px; font-family: "Arial"; font-weight: normal; text-transform: uppercase; background: #EFEFEF; cursor: pointer; position: relative; top: 4px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; border: 1px solid #cccccc; }
+.DlgLF-header-label:hover { background: #d5d5d5; }
+
+#DlgLF-toggle-tab1:checked ~ label[for="DlgLF-toggle-tab1"], #DlgLF-toggle-tab2:checked ~ label[for="DlgLF-toggle-tab2"], #DlgLF-toggle-tab3:checked ~ label[for="DlgLF-toggle-tab3"] { margin: 0px 0px 4px 0px; background: #c9c9c9; cursor: default; }
+
+#DlgLF-toggle-tab1:checked ~ #Dlg-LoadFile-tab1, #DlgLF-toggle-tab2:checked ~ #Dlg-LoadFile-tab2, #DlgLF-toggle-tab3:checked ~ #Dlg-LoadFile-tab3 { display: block; }
+
+#DlgLF-addrBar { position: relative; width: 100%; height: 30px; }
+
+#DlgLF-BrowseFiles { position: relative; width: 100%; height: 290px; }
+
+#DlgLF-Btn { position: relative; width: 95%; height: 30px; text-align: right; padding-top: 5px; }
+
+#DlgLFAddrBarTitle { position: relative; display: inline-block; width: 20px; height: 100%; padding: 0px 0px 0px 11px; }
+
+#DlgLFAddrBarPath { position: relative; display: inline-block; width: 650px; height: 100%; overflow-x: scroll; float: right; }
+
+#DlgLFAddrBarPath > .AddrPathLink { text-decoration: underline; color: #555555; }
+#DlgLFAddrBarPath > .AddrPathLink:active { color: #555555; }
+#DlgLFAddrBarPath > .AddrPathLink:hover { color: #777777; }
+
+#DlgLF-Dtree { position: relative; float: left; display: block; border: 1px solid #666666; width: 275px; height: 100%; background-color: white; overflow-y: scrool; padding: 5px 0px 0px 5px; }
+
+#ProjTree-place { width: 275px; height: 290px; overflow-y: scrool; }
+
+#DlgLFFiles { position: relative; float: right; display: block; border: 1px solid #666666; background-color: white; width: 405px; height: 203px; max-height: 203px; overflow: none; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; overflow: auto; overflow-y: scroll; overflow-x: hidden; }
+
+#DlgLFFilesSelect { position: relative; display: block; float: right; background-color: white; border: 1px solid #666666; width: 400px; height: 90px; overflow: none; padding: 0px 0px 0px 5px; margin: 0px 0px 0px 0px; overflow: auto; overflow-y: scroll; overflow-x: hidden; }
+
+#intro-dlg { width: 700px; height: 400px; z-index: 5; }
+
+#intro-dlg-left { float: left; height: 100%; width: 59.7%; background-color: white; border-top-left-radius: 10px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 10px; z-index: 5; }
+
+#intro-dlg-left .logo-img { text-align: center; margin: 15px 0px 0px 0px; }
+
+#intro-dlg-left h2 { font-family: "klee"; font-size: 30px; text-align: center; margin: 0px 0px 0px 0px; }
+
+#intro-dlg-left h3 { font-family: "klee"; font-size: 15px; text-align: center; margin: 0px 0px 0px 0px; }
+
+#intro-dlg-left ul { list-style-type: none; margin: 30px 0 0 0; }
+
+#intro-dlg-left li { display: inline-block; padding: 5px 0 10px 0; border-bottom: 1px solid #cccccc; }
+
+#intro-dlg-left li:nth-child(1) { border-top: 1px solid #cccccc; }
+
+#intro-dlg-left p { font-family: "SanFrancisco"; font-size: 12px; margin: 0px 0px 0px 0px; }
+
+#intro-dlg-left .icon { float: left; width: 30px; }
+
+#intro-dlg-left .selection { float: left; width: 400px; }
+
+#intro-dlg-left a { color: black; }
+#intro-dlg-left a:hover { color: black; }
+#intro-dlg-left a:active { color: black; }
+
+#intro-dlg-right { float: left; height: 100%; width: 40%; background-color: #E9EEF2; border-top-left-radius: 0px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 0px; z-index: 5; }
+
+#intro-dlg-right ul { list-style-type: none; margin: 0px 0px 0px -40px; }
+
+#intro-dlg-right li { display: inline-block; margin: -4px 0px 0px 0px; padding: 10px 0 10px 0; border-bottom: 1px solid white; background-color: #3D95FD; }
+
+#intro-dlg-right li:nth-child(1) { margin: 0px 0px 0px 0px; border-top-right-radius: 10px; background-color: #3D95FD; }
+
+#intro-dlg-right p { font-family: "SanFrancisco"; font-size: 12px; margin: 0px 0px 0px 0px; }
+
+#intro-dlg-right .icon { float: left; width: 30px; }
+
+#intro-dlg-right .selection { float: left; width: 280px; }
+
+#intro-dlg-right a { color: black; }
+#intro-dlg-right a:hover { color: black; }
+#intro-dlg-right a:active { color: black; }
+
+#dlg-screen-wallpaper { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: url("../graphics/wallpapers/zealand.jpg") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; z-index: 4; overflow: hidden; }
+
+#dlg-screen-mask { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: white; opacity: 0.7; z-index: 5; overflow: hidden; }
+
+#ProgressBar { position: absolute; top: 50%; left: 40%; width: 300px; height: 50px; z-index: 6; }
+
+.color4 > span { background-color: #4169E1; }
+
+.animate { animation: progress 2s linear infinite; -moz-animation: progress 2s linear infinite; -webkit-animation: progress 2s linear infinite; -ms-animation: progress 2s linear infinite; -o-animation: progress 2s linear infinite; }
+
+.bar { position: relative; width: 300px; margin: 5px 0 3px; border: 1px solid #333; background: #333; overflow: hidden; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 1px 1px 1px #777; -moz-box-shadow: 1px 1px 1px #777; -webkit-box-shadow: 1px 1px 1px #777; }
+
+#bar_span { position: relative; display: block; height: 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; width: 0px; }
+
+.gradient > span { box-shadow: 0 5px 5px rgba(255, 255, 255, 0.6) inset, 0 -5px 7px rgba(0, 0, 0, 0.4) inset; -moz-box-shadow: 0 5px 5px rgba(255, 255, 255, 0.6) inset, 0 -5px 7px rgba(0, 0, 0, 0.4) inset; -webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, 0.6) inset, 0 -5px 7px rgba(0, 0, 0, 0.4) inset; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ffffff', endColorstr='#33000000',GradientType=0 ); }
+
+@-webkit-keyframes progress { from { background-position: 0 0; }
+  to { background-position: -60px -60px; } }
+@-moz-keyframes progress { from { background-position: 0 0; }
+  to { background-position: -60px -60px; } }
+@-ms-keyframes progress { from { background-position: 0 0; }
+  to { background-position: -60px -60px; } }
+@-o-keyframes progress { from { background-position: 0 0; }
+  to { background-position: -60px -60px; } }
+@keyframes progress { from { background-position: 0 0; }
+  to { background-position: -60px -60px; } }
+.stripe > span { background-size: 20px 20px; -moz-background-size: 20px 20px; -webkit-background-size: 20px 20px; -o-background-size: 20px 20px; background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%); background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(25%, rgba(255, 255, 255, 0.2)), color-stop(25%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(75%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0))); background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%); background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%); background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%); }
+
+.Dlg-btn { border: 1px solid #666666; background-color: #FFFFFF; font-family: "Arial"; font-size: 14px; border-radius: 6px; }
+
+#DlgLoadSugar { padding: 5px 5px 5px 5px; position: fixed; top: 50%; left: 50%; width: 400px; height: 500px; background-color: #EFEFEF; border: 1px solid gray; z-index: 5; overflow: auto; overflow: scroll; margin-top: -300px; margin-left: -200px; }
+
+.DlgSugarList { width: 92%; height: 77%; margin-left: 10px; margin-right: 10px; margin-bottom: 10px; padding: 5px 5px 5px 5px; }
+
+.DlgSugarSelect { background-color: #EFEFEF; width: 100%; height: 100%; border: 1px solid #C5C5C5; }
+
+/*# sourceMappingURL=dlg-box.css.map */

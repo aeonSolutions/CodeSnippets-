@@ -1,0 +1,246 @@
+@import 'bourbon/bourbon'
+
+#settings-warp
+	position: relative
+	width: 99%
+	height: 99%
+	text-align: center
+	font-family: "SanFrancisco"
+	font-size: 12px
+	overflow-y: scroll
+	
+.ms-selection
+// type, top right bottom left
+	position:  fixed
+	top: 0px
+	right: 0px
+	width: 99%
+	height: 99%
+	+transition()
+	background-color: #F2F2F2
+	display: inline-block
+	z-index: 1
+
+.tss-tab
+	padding: 10px 5px 0px 5px
+	border-top: 1px solid #B3B3B3
+	height: 100%
+	display: none
+	color: #444
+	text-shadow: 1px 1px #fff
+	text-align: left
+
+.ms-selection-wrapper
+	position: relative
+	padding-top: 0px
+	padding-bottom: 5px
+	width: 99%
+	font-family: "SanFrancisco"
+	font-size: 13px
+	font-weight: bolder
+
+.ms-selection-container
+	position: relative
+	width: 99.8%
+	padding-bottom: 10px
+	border-bottom: 1px solid #333
+
+.ms-slider
+	position: relative
+	margin: 0 auto
+	display: block
+	width: 600px
+	overflow-y: hidden
+	max-height: 1500px
+	transition-property: all
+	transition-duration: .5s
+	transition-timing-function: cubic-bezier(0.42, 0.0, 1.0, 1.0)
+
+.ms-slider.closed
+	max-height: 0
+	transition-property: all
+	transition-duration: .5s
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
+
+.ms-selection-label 
+	display: inline-block
+	width: 10px
+	height: 10px
+	cursor: pointer
+	background-image: url(../../GUI/graphics/icons/3angleRside.png)
+	background-size: 10px 10px
+
+.ms-selection-header-label
+	// type, top right bottom left
+	display: inline-block
+	padding: 6px 0 7px 10px
+	margin: 0 3px 0 0
+	font-size: 95%
+	font-weight: 700
+	color: #777
+	cursor: pointer
+	text-shadow: 1px 1px #fff
+	&:hover
+		color: #25357D
+
+#bottom-spacer
+	position: relative
+	display: block
+	width: 100%
+	height: 40px
+	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.ms-selection input[type="radio"]
+	display: none
+
+#tss-toggle-tab1:checked ~ label[for="tss-toggle-tab1"],#tss-toggle-tab2:checked ~ label[for="tss-toggle-tab2"],#tss-toggle-tab3:checked ~ label[for="tss-toggle-tab3"],#tss-toggle-tab4:checked ~ label[for="tss-toggle-tab4"],#tss-toggle-tab5:checked ~ label[for="tss-toggle-tab5"],#tss-toggle-tab6:checked ~ label[for="tss-toggle-tab6"],#tss-toggle-tab7:checked ~ label[for="tss-toggle-tab7"],#tss-toggle-tab8:checked ~ label[for="tss-toggle-tab8"]
+	margin-bottom: 0
+	color: #1781FB
+	cursor: default
+
+#tss-toggle-tab1:checked ~ #tss-tab1,#tss-toggle-tab2:checked ~ #tss-tab2,#tss-toggle-tab3:checked ~ #tss-tab3,#tss-toggle-tab4:checked ~ #tss-tab4,#tss-toggle-tab5:checked ~ #tss-tab5,#tss-toggle-tab6:checked ~ #tss-tab6,#tss-toggle-tab7:checked ~ #tss-tab7,#tss-toggle-tab8:checked ~ #tss-tab8
+	display: block
+
+
+//tab 1
+#click-identity, #click-deploy, #click-icons-img, #click-embedded-bin, #click-linked-lib, #click-linked-widget, #click-linked-webapp, #click-linked-framew
+	display: none
+
+#click-identity:checked + .ms-selection-label, #click-deploy:checked + .ms-selection-label, #click-icons-img:checked + .ms-selection-label, #click-embedded-bin:checked + .ms-selection-label, #click-linked-lib:checked + .ms-selection-label, #click-linked-widget:checked + .ms-selection-label, #click-linked-webapp:checked + .ms-selection-label, #click-linked-framew:checked + .ms-selection-label
+	background-image: url(../../GUI/graphics/icons/3angleDown.png)
+	background-size: 10px 10px
+	
+	
+//tab 7
+#click-hosting, #click-apache, #click-script-lang, #click-db-server, #click-webHD
+	display: none
+
+#click-hosting:checked + .ms-selection-label, #click-apache:checked + .ms-selection-label, #click-script-lang:checked + .ms-selection-label, #click-db-server:checked + .ms-selection-label, #click-build-phases:checked + .ms-selection-label, #click-webHD:checked + .ms-selection-label
+	background-image: url(../../GUI/graphics/icons/3angleDown.png)
+	background-size: 10px 10px
+
+	
+//tab
+#click-engine, #click-build-opt, #click-build-phases
+	display: none
+
+#click-engine:checked + .ms-selection-label, #click-build-opt:checked + .ms-selection-label
+	background-image: url(../../GUI/graphics/icons/3angleDown.png)
+	background-size: 10px 10px
+
+
+//tab2
+#click-cloud, #click-wallet, #click-fhome, #click-health, #click-tickets, #click-games, #click-store, #click-push, #click-DataP, #click-DNS, #click-StaySafe, #click-money, #click-search
+	display: none
+
+#click-cloud:checked + .ms-selection-label, #click-wallet:checked + .ms-selection-label, #click-fhome:checked + .ms-selection-label, #click-health:checked + .ms-selection-label, #click-tickets:checked + .ms-selection-label, #click-games:checked + .ms-selection-label, #click-store:checked + .ms-selection-label, #click-push:checked + .ms-selection-label, #click-DataP:checked + .ms-selection-label, #click-StaySafe:checked + .ms-selection-label, #click-DNS:checked + .ms-selection-label, #click-money:checked + .ms-selection-label, #click-search:checked + .ms-selection-label
+	background-image: url(../../GUI/graphics/icons/3angleDown.png)
+	background-size: 10px 10px
+
+
+//tab4
+#click-authtypes, #click-authkeys, #click-share, #click-assocdomain
+	display: none
+
+#click-authtypes:checked + .ms-selection-label, #click-authkeys:checked + .ms-selection-label, #click-share:checked + .ms-selection-label, #click-assocdomain:checked + .ms-selection-label
+	background-image: url(../../GUI/graphics/icons/3angleDown.png)
+	background-size: 10px 10px
+
+
+//tab6
+#click-dev-locations, #click-dev-versions, #click-dev-repo
+	display: none
+
+#click-dev-locations:checked + .ms-selection-label, #click-dev-versions:checked + .ms-selection-label, #click-dev-repo:checked + .ms-selection-label
+	background-image: url(../../GUI/graphics/icons/3angleDown.png)
+	background-size: 10px 10px
+
+
+///////////////////////////////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+input.toggle
+	max-height: 0
+	max-width: 0
+	opacity: 0
+
+
+input.toggle + .l-toggle
+	display: block
+	position: relative
+	box-shadow: inset 0 0 0px 1px #d5d5d5
+	text-indent: -5000px
+	height: 20px
+	width: 40px
+	border-radius: 10px
+
+
+input.toggle + .l-toggle:before
+	content: ""
+	position: absolute
+	display: block
+	height: 20px
+	width: 20px
+	top: 0
+	left: 0
+	border-radius: 10px
+	background: rgba(19, 191, 17, 0)
+	-moz-transition: .25s ease-in-out
+	-webkit-transition: .25s ease-in-out
+	transition: .25s ease-in-out
+
+
+input.toggle + .l-toggle:after
+	content: ""
+	position: absolute
+	display: block
+	height: 20px
+	width: 20px
+	top: 0
+	left: 0px
+	border-radius: 10px
+	background: white
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .2), 0 2px 4px rgba(0, 0, 0, .2)
+	-moz-transition: .25s ease-in-out
+	-webkit-transition: .25s ease-in-out
+	transition: .25s ease-in-out
+
+
+input.toggle:checked + .l-toggle:before 
+	width: 40px
+	background: rgba(19, 191, 17, 1)
+
+
+input.toggle:checked + .l-toggle:after
+	left: 20px
+	box-shadow: inset 0 0 0 1px rgba(19, 191, 17, 1), 0 2px 4px rgba(0, 0, 0, .2)
+
+.flipswitch
+	position: relative
+	margin-top: -13px
+	float: right
+	margin-right: 5px
+
+///////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.ms-file-list
+	border-bottom: 1px solid #cccccc
+	border-top: 1px solid #cccccc
+
+.ms-file-btn
+	font-family: "Klee"
+	font-size: 24px
+	color: #aaaaaa
+
+ms-files
+	width: 100%
+
+.ms-files input[type="checkbox"]
+	display: none
+
+.ms-files
+	width: 100%
+	border: none
+	font-family: "SanFrancisco"
+	font-size: 12px
+		
+.ms-files:focus 
+	outline: none
+		

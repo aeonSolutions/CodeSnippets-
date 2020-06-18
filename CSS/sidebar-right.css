@@ -1,0 +1,35 @@
+#top-icon-right { position: float; top: 0; right: 0px; bottom: 0px; left: 0; height: 15px; width: 100%; padding: 10px 12px 10px 12px; border-bottom: 1px solid #B3B3B3; }
+
+#checkbox-wrap-right { float: right; display: inline-block; }
+
+#checkbox-toggle-right { cursor: pointer; text-align: center; color: black; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: none; }
+
+#sbr-toggler-img { float: right; display: block-inline; margin: 4px 10px 0 0; background: url("../graphics/icons/sbr-toggler-off.png") no-repeat; background-size: 19px 15px, cover; width: 19px; height: 15px; }
+#sbr-toggler-img:hover { background: url("../graphics/icons/sbr-toggler-on.png") no-repeat; background-size: 18px 14px, cover; width: 18px; height: 14px; }
+
+#checkbox-toggle-bottom:checked ~ #sbr-toggler-img { background-color: red; background: url("../graphics/icons/sbb-toggler-on.png") no-repeat; background-size: 19px 15px, cover; width: 19px; height: 15px; }
+
+#checkbox-toggle-right:checked ~ .sidebar-right { position: fixed; right: 0px; top: 0px; -webkit-transition: all 0.15s ease-out 0s; -moz-transition: all 0.15s ease-out 0s; transition: all 0.15s ease-out 0s; display: block; }
+
+#checkbox-toggle-right:checked ~ .checkbox-wrap-right { right: 265px; -webkit-transition: all 0.15s ease-out 0s; -moz-transition: all 0.15s ease-out 0s; transition: all 0.15s ease-out 0s; }
+
+#checkbox-toggle-right:checked ~ #board { right: 260px; margin-right: 0px; -webkit-transition: all 0.15s ease-out 0s; -moz-transition: all 0.15s ease-out 0s; transition: all 0.15s ease-out 0s; }
+
+.sidebar-right { position: fixed; top: 0px; right: -255px; text-align: left; width: 255px; height: 100%; -webkit-transition: all 0.15s ease-out 0s; -moz-transition: all 0.15s ease-out 0s; transition: all 0.15s ease-out 0s; background-color: #F2F2F2; display: inline-block; border-color: #B3B3B3; border-left: 1px solid #B3B3B3; z-index: 1; }
+
+.sidebar-right input[type="radio"] { display: none; }
+
+.sidebar-right ul { list-style-type: none; }
+
+.sidebar-right li { color: black; font: 11px "Helvetica Neue", Menlo; margin-bottom: 6px; -webkit-font-smoothing: antialiased; cursor: pointer; }
+
+.sidebar-right label { display: inline-block; padding: 6px 0 7px 10px; margin: 0 3px 0 0; font-size: 95%; font-weight: 700; color: #777; cursor: pointer; text-shadow: 1px 1px #fff; }
+.sidebar-right label:hover { color: #25357D; }
+
+.sbr-tab { padding: 10px 5px 10px 5px; border-top: 1px solid #B3B3B3; height: 100%; display: none; color: #444; text-shadow: 1px 1px #fff; }
+
+#sbr-toggle-tab1:checked ~ label[for="sbr-toggle-tab1"], #sbr-toggle-tab2:checked ~ label[for="sbr-toggle-tab2"], #sbr-toggle-tab3:checked ~ label[for="sbr-toggle-tab3"], #sbr-toggle-tab4:checked ~ label[for="sbr-toggle-tab4"], #sbr-toggle-tab5:checked ~ label[for="sbr-toggle-tab5"], #sbr-toggle-tab6:checked ~ label[for="sbr-toggle-tab6"], #sbr-toggle-tab7:checked ~ label[for="sbr-toggle-tab7"], #sbr-toggle-tab8:checked ~ label[for="sbr-toggle-tab8"] { margin-bottom: 0; color: #1781FB; cursor: default; }
+
+#sbr-toggle-tab1:checked ~ #sbr-tab1, #sbr-toggle-tab2:checked ~ #sbr-tab2, #sbr-toggle-tab3:checked ~ #sbr-tab3, #sbr-toggle-tab4:checked ~ #sbr-tab4, #sbr-toggle-tab5:checked ~ #sbr-tab5, #sbr-toggle-tab6:checked ~ #sbr-tab6, #sbr-toggle-tab7:checked ~ #sbr-tab7, #sbr-toggle-tab8:checked ~ #sbr-tab8 { display: block; }
+
+/*# sourceMappingURL=sidebar-right.css.map */

@@ -1,0 +1,154 @@
+@import 'bourbon/bourbon'
+$box-bk-color-start: #dedede
+$box-bk-color-end: #ffffff
+
+$box-general-bk: #FFFFFF
+$box-general-border: #7F7F7F
+$box-general-width: 200px
+$box-general-height: 700px
+
+$box-SearchFilters-width: 500px
+$box-SearchFilters-height: 250px
+///////////////////////////////// box where dialogs are loaded on main page \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// type, top right bottom left
+
+#MainMenu
+	position: absolute
+	z-index: 5
+	
+.GeneralMenu
+	width: $box-general-width
+	height: $box-general-height
+	background: $box-general-bk
+	background: -moz-linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	background: -webkit-linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, $box-bk-color-start), color-stop(1, $box-bk-color-end))
+	background: -o-linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	background: -ms-linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	background: linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px
+	border-radius: 5px
+	padding-left: 10px
+	padding-top: 10px
+	padding-right: 10px
+	margin-top: 30px
+	margin-left: 10px
+	visibility: hidden
+	text-align: left
+
+.GeneralMenu:after
+	content: ""
+	position: absolute
+	box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px
+	-moz-transform: rotate(225deg)
+	-webkit-transform: rotate(225deg)
+	top: -8px
+	left: 15px
+	border-width: 10px
+	border-style: solid
+	border-color: transparent $box-bk-color-start $box-bk-color-start transparent
+	
+///////////////////////////////// box where rapid view or for consultation contents are loaded \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+#WindowPopUp
+	padding: 5px 5px 5px 5px
+
+	position: fixed
+	top: 50%
+	left: 50%
+
+	width: 900px
+	height: 500px
+	background-color: white
+	border: 1px solid gray
+	z-index: 5
+	overflow: auto
+	overflow: scroll
+
+	margin-top: -250px
+	margin-left: -450px
+
+#WindowClose
+	float: right
+	position: relative
+	top: 0px
+	right: 15px
+	
+///////////////////////////////////////////////////////////////////////////////////////// Search Filters box \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.SearchFilterBox
+	position: absolute
+	z-index: 5
+
+.SearchFilters
+	width: $box-SearchFilters-width
+	height: $box-SearchFilters-height
+	background: $box-general-bk
+	background: -moz-linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	background: -webkit-linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, $box-bk-color-start), color-stop(1, $box-bk-color-end))
+	background: -o-linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	background: -ms-linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	background: linear-gradient(top, $box-bk-color-start 0%, $box-bk-color-end 100%)
+	box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px
+	border-radius: 5px
+	padding-left: 15px
+	padding-top: 10px
+	padding-right: 10px
+	margin-top: -15px
+	margin-left: 200px
+	visibility: hidden
+	text-align: left
+
+.SearchFilters:after
+	content: ""
+	position: absolute
+	box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px
+	-moz-transform: rotate(135deg)
+	-webkit-transform: rotate(135deg)
+	top: 10px
+	left: -8px
+	border-width: 10px
+	border-style: solid 
+	border-color: transparent $box-bk-color-start $box-bk-color-start transparent
+
+///////////////////////////////////////////////////////////////////////////////////////// Search Filters box \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.BoxSelection
+	position: relative
+	margin: 0px 0px 0px 0px
+	width: 100%
+	border-bottom: 1px solid #cccccc
+	border-top: 1px solid #cccccc
+	padding-bottom: 5px
+	
+
+.BoxSelection ul 
+	list-style-type: none
+	margin: 0px 0px 0px 0px
+	padding: 0px 0px 0px 0px
+
+
+.BoxSelection li 
+	font: 14px/0.875 "SanFrancisco"
+	text-shadow: none
+	margin: 0px 0px 0px 0px
+  
+.BoxSelection li:last-child 
+	border: none
+
+.BoxSelection li a 
+	text-decoration: none
+	color: #000
+	padding: 3px 0px 3px 0px
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease
+	transition: font-size 0.3s ease, background-color 0.3s ease
+	display: block
+	width: 100%
+
+.BoxSelection li a:hover 
+	font-size: 16px
+	background: #f6f6f6
