@@ -1,0 +1,52 @@
+<div id="Dlg-LoadFile" class="dlg-box dlg-center-screen">
+
+
+	<input type="radio" name="Dlgtabs" id="DlgLF-toggle-tab1" checked="checked" />
+	<label class="DlgLF-header-label" for="DlgLF-toggle-tab1">Local HD</label>
+	
+	<input type="radio" name="Dlgtabs" id="DlgLF-toggle-tab2" />
+	<label class="DlgLF-header-label" for="DlgLF-toggle-tab2">Web HD</label>
+	
+	<input type="radio" name="Dlgtabs" id="DlgLF-toggle-tab3" />
+	<label class="DlgLF-header-label" for="DlgLF-toggle-tab3">Web Link</label>
+	<!-- start of tab-container-->			
+	<div id="Dlg-LoadFile-tab1" class="Dlg-LoadFile-tab">
+		<div id="DlgLF-addrBar">
+			<div id="DlgLFAddrBarTitle">
+				<img src="system/GUI/graphics/icons/folder.png" height="20px" alt="" />
+			</div>
+			<div id="DlgLFAddrBarPath" class="TextS1 ArialRegular">
+				<img src="system/GUI/graphics/icons/loading_bar_animated.gif" height="10px" alt="" />
+			</div>
+		</div>
+		<div id="DlgLF-BrowseFiles">
+			<div id="DlgLF-Dtree">
+				{directory_tree}			
+			</div>
+			<div id="DlgLFFiles">
+			<div class="UnloadedContent TextS1 ArialRegular"></br></br></br><img src="system/GUI/graphics/icons/UnloadedSearch.png" height="50px" alt="" /></br>No Folder Selected</div>
+			</div>
+			<div id="DlgLFFilesSelect" class="TextS1 SanFrancisco">
+			<div class="UnloadedContent TextS1 ArialRegular"><img src="system/GUI/graphics/icons/newproject.png" height="30px" alt="" /></br>No Files Selected</div>
+			</div>
+		</div>
+		<div id="DlgLF-Btn">
+			<input class="Dlg-btn" type="button" name="DlgCancelBtn" id="DlgCancelBtn" value="Cancel" onclick="javascript:DlgAbort();" />
+			<input class="Dlg-btn" type="button" name="DlgLoadBtn" id="DlgLoadBtn" value="Load Selection" onclick="{cfg}" />
+		</div>
+		
+			
+	</div>
+	<!-- end of tab-container-->
+	<!-- start of tab-container-->			
+	<div id="Dlg-LoadFile-tab2" class="Dlg-LoadFile-tab">
+			tab 2
+	</div>
+	<!-- end of tab-container-->
+	<!-- start of tab-container-->			
+	<div id="Dlg-LoadFile-tab3" class="Dlg-LoadFile-tab">
+			Make Ajx call for public directory and file tree
+			 <progress id="progressBar" max="100" value="0"/>
+	</div>
+	<!-- end of tab-container-->
+</div>
